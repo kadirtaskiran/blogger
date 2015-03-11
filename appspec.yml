@@ -8,9 +8,6 @@ hooks:
     - location: scripts/install_puppet
       timeout: 300
       runas: root
-    - location: scripts/delete_old
-      timeout: 300
-      runas: root
     - location: scripts/install_grails
       timeout: 300
       runas: ec2-user
