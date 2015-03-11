@@ -36,6 +36,7 @@ grails.project.dependency.resolution = {
         mavenRepo "http://repository.codehaus.org"
         mavenRepo "http://download.java.net/maven/2/"
         mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://repo.spring.io/milestone/"
     }
 
     dependencies {
@@ -52,9 +53,9 @@ grails.project.dependency.resolution = {
         runtime ":resources:1.1.6"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
-        runtime ":zipped-resources:1.0"
-        runtime ":cached-resources:1.0"
-        runtime ":yui-minify-resources:0.1.4"
+        //runtime ":zipped-resources:1.0"
+        //runtime ":cached-resources:1.0"
+        //runtime ":yui-minify-resources:0.1.4"
 
         build ":tomcat:$grailsVersion"
 
