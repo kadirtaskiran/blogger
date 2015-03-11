@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+files:
+  - source: puppet
+    destination: /etc/puppet
+hooks:
+  BeforeInstall:
+    - location: scripts/install_puppet
+      timeout: 300
+      runas: root
+    - location: scripts/install_grails
+      timeout: 300
+      runas: ec2-user
+    - location: scripts/create_war
+      timeout: 500
+      runas: root
+  ApplicationStart:
+    - location: scripts/puppet_apply
+  ApplicationStop:
+    - location: scripts/delete_old
+      timeout: 300
+      runas: root
+
+
