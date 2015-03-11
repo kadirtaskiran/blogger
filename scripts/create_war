@@ -3,3 +3,7 @@
 cd /opt/codedeploy-agent/deployment-root/e4980435-e5eb-47b9-bd99-3768254715f9/d-*/deployment-archive
 
 touch kmttest
+
+source "$HOME/.gvm/bin/gvm-init.sh"
+
+sudo grails clean && sudo grails compile && sudo grails war
