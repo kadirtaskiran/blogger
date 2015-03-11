@@ -13,7 +13,7 @@ hooks:
       runas: ec2-user
     - location: scripts/create_war
       timeout: 500
-      runas: root
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/puppet_apply
   ApplicationStop:
