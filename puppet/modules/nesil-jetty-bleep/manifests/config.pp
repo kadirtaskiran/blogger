@@ -107,7 +107,7 @@ class nesil-jetty-bleep::config(
     exec { "warfile download from S3":
         cwd     => "/opt/tempwarfile",
         creates => "/opt/tempwarfile/${warfile_name}",
-        command => "cp /tmp/blagger-0.1.war /opt/tempwarfile/${warfilename}",
+        command => "cp /tmp/${warfilename}.war /opt/tempwarfile/${warfilename}",
         timeout => 0,
         require => Package['wget']
   } ->
