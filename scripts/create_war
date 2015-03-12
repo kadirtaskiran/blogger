@@ -4,6 +4,8 @@ cd /opt/codedeploy-agent/deployment-root/b3479486-38c9-474a-82fd-6f03550f399d/d-
 
 source "$HOME/.gvm/bin/gvm-init.sh"
 
+mkdir /opt/codedeploy-agent/deployment-root/b3479486-38c9-474a-82fd-6f03550f399d/d-*/deployment-archive/grails-app/migrations
+
 ./grailsw clean 
 ./grailsw compile
 ./grailsw war
