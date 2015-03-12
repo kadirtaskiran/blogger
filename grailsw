@@ -6,6 +6,7 @@
 
 PROGNAME=`basename "$0"`
 DIRNAME=`dirname "$0"`
+JAVA_HOME=/usr/lib/jvm/java
 
 # Use the maximum available, or set MAX_FD != -1 to use that
 MAX_FD="maximum"
